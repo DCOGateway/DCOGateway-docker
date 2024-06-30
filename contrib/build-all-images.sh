@@ -185,7 +185,7 @@ DOCKERFILE="Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/btcpayserver/v1.13.2/Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Dockerfile"
 echo "Building btcpayserver/btcpayserver:1.13.2$<BTCPAY_BUILD_CONFIGURATION>?"
-git clone https://github.com/btcpayserver/btcpayserver btcpayserver
+git clone https://github.com/DCOGateway/DCOGateway btcpayserver
 cd btcpayserver
 git checkout v1.13.2
 cd "$(dirname $DOCKERFILE)"
