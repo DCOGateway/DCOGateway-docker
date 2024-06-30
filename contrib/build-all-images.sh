@@ -187,7 +187,7 @@ DOCKERFILE="Dockerfile"
 echo "Building btcpayserver/btcpayserver:1.13.2$<BTCPAY_BUILD_CONFIGURATION>?"
 git clone https://github.com/DCOGateway/DCOGateway btcpayserver
 cd btcpayserver
-git checkout v1.13.2
+git checkout v1.13.x.DCOGateway
 cd "$(dirname $DOCKERFILE)"
 docker build -f "$DOCKERFILE" -t "btcpayserver/btcpayserver:1.13.2$<BTCPAY_BUILD_CONFIGURATION>?" .
 cd - && cd ..
