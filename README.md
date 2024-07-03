@@ -57,7 +57,7 @@ mkdir BTCPayServer
 cd BTCPayServer
 
 # Clone this repository
-git clone https://github.com/btcpayserver/btcpayserver-docker
+git clone https://github.com/DCOGateway/DCOGateway-docker
 cd btcpayserver-docker
 
 # Run btcpay-setup.sh with the right parameters

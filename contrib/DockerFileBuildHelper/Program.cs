@@ -286,7 +286,7 @@ namespace DockerFileBuildHelper
                     dockerInfo.DockerFilePath = "docker-compose-generator/Dockerfile";
                     dockerInfo.DockerFilePathARM32v7 = "docker-compose-generator/Dockerfile";
                     dockerInfo.DockerFilePathARM64v8 = "docker-compose-generator/Dockerfile";
-                    dockerInfo.GitLink = "https://github.com/btcpayserver/btcpayserver-docker";
+                    dockerInfo.GitLink = "https://github.com/DCOGateway/DCOGateway-docker";
                     dockerInfo.GitRef = $"dcg-latest";
                     dockerInfo.SupportedByUs = true;
                     break;
@@ -466,7 +466,7 @@ namespace DockerFileBuildHelper
                     dockerInfo.DockerFilePath = "Dockerfile";
                     dockerInfo.DockerFilePathARM32v7 = "Dockerfile";
                     dockerInfo.DockerFilePathARM64v8 = "Dockerfile";
-                    dockerInfo.GitLink = "https://github.com/btcpayserver/btcpayserver";
+                    dockerInfo.GitLink = "https://github.com/DCOGateway/DCOGateway";
                     // v1.0.5.4$<BTCPAY_BUILD_CONFIGURATION>
                     dockerInfo.GitRef = $"v{image.Tag.Substring(0, image.Tag.IndexOf('$'))}";
                     dockerInfo.SupportedByUs = true;
