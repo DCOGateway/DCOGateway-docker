@@ -12,12 +12,12 @@ DOCKERFILE="docker-compose-generator/Dockerfile"
 [[ "$(uname -m)" == "armv7l" ]] && DOCKERFILE="docker-compose-generator/Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/btcpayserver-docker/dcg-latest/docker-compose-generator/Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="docker-compose-generator/Dockerfile"
-echo "Building btcpayserver/docker-compose-generator:latest"
+echo "Building dcogateway/docker-compose-generator:latest"
 git clone https://github.com/DCOGateway/DCOGateway-docker docker-compose-generator
 cd docker-compose-generator
 git checkout dcg-latest
 cd "$(dirname $DOCKERFILE)"
-docker build -f "$DOCKERFILE" -t "btcpayserver/docker-compose-generator:latest" .
+docker build -f "$DOCKERFILE" -t "dcogateway/docker-compose-generator:latest" .
 cd - && cd ..
 
 
