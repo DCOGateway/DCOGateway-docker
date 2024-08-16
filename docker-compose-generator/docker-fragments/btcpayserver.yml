@@ -19,7 +19,7 @@ services:
       BTCPAY_SSHKEYFILE: ${BTCPAY_SSHKEYFILE}
       BTCPAY_SSHAUTHORIZEDKEYS: ${BTCPAY_SSHAUTHORIZEDKEYS}
       BTCPAY_DEBUGLOG: btcpay.log
-      BTCPAY_UPDATEURL: https://api.github.com/repos/btcpayserver/btcpayserver/releases/latest
+      BTCPAY_UPDATEURL: https://api.github.com/repos/DCOGateway/DCOGateway/releases/latest
       BTCPAY_DOCKERDEPLOYMENT: "true"
     labels:
       traefik.enable: "true"
