@@ -38,7 +38,7 @@ namespace DockerFileBuildHelper
             List<DockerInfo> dockerInfos = new List<DockerInfo>();
             foreach (var image in new[]
             {
-                Image.Parse("btcpayserver/docker-compose-generator"),
+                Image.Parse("dcogateway/docker-compose-generator"),
             }.Concat(GetImages(fragmentDirectory)))
             {
                 Console.WriteLine($"Image: {image.ToString()}");
