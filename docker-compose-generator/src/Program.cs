@@ -81,12 +81,11 @@ namespace DockerGenerator
 				{
 					fragments.Add(crypto.EclairFragment);
 				}
+				if (composition.SelectedLN == "phoenixd" && crypto.PhoenixdFragment != null)
+				{
+					fragments.Add(crypto.PhoenixdFragment);
+				}
 			}
-
-			if (hasAltcoins)
-				Environment.SetEnvironmentVariable("BTCPAY_BUILD_CONFIGURATION", "-altcoins");
-			else
-				Environment.SetEnvironmentVariable("BTCPAY_BUILD_CONFIGURATION", "");
 
 			foreach (var fragment in composition.AdditionalFragments)
 			{
